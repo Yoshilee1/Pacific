@@ -1,0 +1,259 @@
+form{
+    border: 10px solid seagreen;
+    width: 250px;
+    height: 380px;
+    margin: 0 auto;
+    background-color: greenyellow;
+}
+
+input[type=submit]{
+                  color: orange;
+                  font-size: 1em;
+                  display: inline-block;
+}
+
+input, textarea{
+               display: inline-block;
+               border-radius: 5px;
+               background-color: firebrick;
+}
+
+label{
+     color: darkgoldenrod;
+}
+
+table{
+     border-collapse: collapse;
+     margin: 0 auto;
+}
+
+th, td{
+      border: 1px solid darkred;
+      padding: 10px;
+      color: darkblue;
+}
+
+th{
+  background-color: darkred;
+}
+
+header{
+	    background-color: #002171;
+	    color: #FFFFFF;
+	    font-family: Georgia, serif;
+      padding: 1em;
+}
+/*This is the CSS for the hero image*/
+#homehero{
+         background-image:url(images/coast.jpg);
+         height: 300px;
+         background-size: cover;
+         background-repeat:no-repeat;
+}
+
+#yurthero{
+         background-image: url(images/yurt.jpg);
+         height: 300px;
+         background-size: cover;
+         background-repeat: no-repeat;
+}
+
+#trailhero{
+          background-image:url(images/trail.jpg);
+          height: 300px;
+          background-size: cover;
+          background-repeat:no-repeat;
+}
+
+#shophero{
+         background-image: url(images/ocean.jpg);
+         height: 300px;
+         background-size: cover;
+         background-repeat: no-repeat;
+}
+
+#reservehero{
+            background-image: url(images/psunset.jpg);
+            height: 300px;
+            background-size: cover;
+            background-repeat: no-repeat;
+}
+
+.resort{
+       font-size: 1.2em;
+       color: #1976D2;
+}
+
+h1{
+  text-align: center;
+  font-size: 1.5em;
+}
+
+body{
+	  background-color: #FFFFFF;
+	  font-family: Verdana, Arial, san-serif;
+	  color: #666666;
+      margin: 0 auto;
+}
+
+
+nav{
+   font-weight: bold;
+   text-align: center;
+   background-color: white;
+}
+
+nav a{
+     text-decoration: none;
+}
+
+h2{
+  font-family: Georgia, serif;
+  color: #1976D2;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: red;
+}
+
+dt{
+  font-weight: bold;
+  color: #002171;
+}
+
+footer{
+      font-size: .7em;
+      font-style: italic;
+      text-align: center;
+      padding: 1em;
+      background-color: white;
+}
+
+main{
+    padding-top: 0em;
+    padding-bottom: 0em;
+    padding-right: 1em;
+    padding-left: 1em;
+    text-align: center;
+}
+
+main li{
+    list-style: none;
+}
+
+#wrapper{
+        background-color: #FFFFFF;
+}
+
+h3{
+  color: #000033;
+}
+
+header a {
+         text-decoration: none;
+}
+
+header a:link{
+             color: #FFFFFF;
+}
+
+header a:visited{
+                color: #FFFFFF;
+}
+
+header a:hover{
+              color: #90C7E3;
+}
+
+header a:active{
+               color: #DDDDDD;
+}
+
+nav ul{
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+}
+
+nav li{
+      padding: .5em 1em .5em 1em;
+      width: 100%;
+      border-bottom: solid 1px #344873;
+}
+
+nav a:link{
+          color: #5C7FA3;
+}
+
+nav a:visited{
+             color: #344873;
+}
+
+nav a:hover{
+           color: #A52A2A;
+}
+
+nav a:active{
+            color: #000000;
+}
+
+*{
+ box-sizing: border-box;
+}
+
+#mobile {
+        display: inline;
+}
+#not-mobile{
+           display: none;
+}
+
+
+@media only screen and (min-width: 600px){
+/*The CSS will work ONLY IF the screen size is greater than 600px */
+
+  h1{
+    font-size: 2em;
+    letter-spacing: .25em;
+  }
+
+  nav ul {
+         flex-flow: row nowrap;
+         justify-content: space-around;
+         padding-right: 2em;
+  }
+
+  nav li{
+        width: 12em;
+        border-bottom: none;
+  }
+
+  #mobile {
+          display: none;
+  }
+  #not-mobile{
+             display: inline;
+}
+
+
+}
+
+
+@media only screen and (min-width: 1024px){
+/*The CSS will work ONLY IF the screen size is greater than 1024px */
+  
+  nav ul{
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  main{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 80%;
+    background-color: white;
+  }
+
+}
